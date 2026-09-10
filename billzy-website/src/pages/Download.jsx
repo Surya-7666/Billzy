@@ -590,7 +590,8 @@ export default function Download() {
               throw new Error(verifyData.message || "Payment verification failed.");
             }
 
-            const absoluteDownloadUrl = `${PAYMENT_API_URL.replace(/\/$/, "")}${verifyData.downloadUrl}`;
+            const paymentServerBaseUrl = PAYMENT_API_URL.replace(/\/api\/?$/, "").replace(/\/$/, "");
+            const absoluteDownloadUrl = `${paymentServerBaseUrl}${verifyData.downloadUrl}`;
             setDownloadUrl(absoluteDownloadUrl);
             sessionStorage.setItem("billzy_download_url", absoluteDownloadUrl);
             setPaymentState("paid");
