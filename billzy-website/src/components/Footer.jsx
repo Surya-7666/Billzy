@@ -245,7 +245,7 @@ export default function Footer() {
                 whileTap={{
                   scale: 0.97,
                 }}
-                src="/SR Billing-logo.png"
+                src="/billzy-logo.png"
                 alt="SR Billing"
                 className="h-[62px] w-auto object-contain brightness-0 invert"
               />
