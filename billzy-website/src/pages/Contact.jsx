@@ -16,8 +16,8 @@ const contactOptions = [
     title: "General Questions",
     description:
       "Questions about SR Billing, features, billing workflows or getting started.",
-    action: "support@SR Billing.in",
-    href: "mailto:support@SR Billing.in",
+    action: "srbilling2026@gmail.com",
+    href: "mailto:srbilling2026@gmail.com",
   },
   {
     number: "02",
@@ -25,7 +25,7 @@ const contactOptions = [
     description:
       "Interested in using SR Billing for your shop or business? Let's talk.",
     action: "Talk to us",
-    href: "mailto:support@SR Billing.in?subject=Business%20Enquiry",
+    href: "mailto:srbilling2026@gmail.com?subject=Business%20Enquiry",
   },
   {
     number: "03",
@@ -33,7 +33,7 @@ const contactOptions = [
     description:
       "Having trouble with the desktop application? Tell us what happened.",
     action: "Get support",
-    href: "mailto:support@SR Billing.in?subject=Technical%20Support",
+    href: "mailto:srbilling2026@gmail.com?subject=Technical%20Support",
   },
 ];
 
@@ -328,7 +328,7 @@ export default function Contact() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="mailto:support@SR Billing.in"
+                href="mailto:srbilling2026@gmail.com"
                 className="rounded-full border border-white/80 bg-white/65 px-5 py-3 text-sm font-bold text-[#43305F] shadow-sm backdrop-blur-xl transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Email support
@@ -373,7 +373,7 @@ export default function Contact() {
 
             <div className="mt-4 flex items-center gap-2 text-xs font-semibold text-[#756970]">
               <span className="h-2 w-2 rounded-full bg-[#C76B42]" />
-              support@SR Billing.in
+              srbilling2026@gmail.com
             </div>
           </motion.div>
 
@@ -451,10 +451,10 @@ export default function Contact() {
                     </div>
 
                     <a
-                      href="mailto:support@SR Billing.in"
+                      href="mailto:srbilling2026@gmail.com"
                       className="mt-1 block text-sm font-bold text-[#E4A17F] transition hover:text-white"
                     >
-                      support@SR Billing.in
+                      srbilling2026@gmail.com
                     </a>
                   </div>
 
