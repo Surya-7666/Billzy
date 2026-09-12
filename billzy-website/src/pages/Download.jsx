@@ -11,8 +11,8 @@ import {
 const PAYMENT_API_URL =
   import.meta.env.VITE_PAYMENT_API_URL || "http://localhost:5001/api";
 
-const SR Billing_PRICE_DISPLAY =
-  import.meta.env.VITE_SR Billing_PRICE_DISPLAY || "₹499";
+const BILLZY_PRICE_DISPLAY =
+  import.meta.env.VITE_BILLZY_PRICE_DISPLAY || "₹499";
 
 const benefits = [
   {
@@ -291,7 +291,7 @@ function DownloadConsole() {
 
               <div className="relative flex h-24 w-24 items-center justify-center rounded-[28px] bg-white p-4 shadow-2xl">
                 <img
-                  src="/SR Billing-logo.png"
+                  src="/billzy-logo.png"
                   alt="SR Billing"
                   className="h-full w-full object-contain"
                 />
@@ -521,7 +521,7 @@ export default function Download() {
   const [paymentMessage, setPaymentMessage] = useState("");
 
   useEffect(() => {
-    const savedDownloadUrl = sessionStorage.getItem("SR Billing_download_url");
+    const savedDownloadUrl = sessionStorage.getItem("billzy_download_url");
     if (savedDownloadUrl) {
       setDownloadUrl(savedDownloadUrl);
       setPaymentState("paid");
@@ -573,7 +573,7 @@ export default function Download() {
         name: "SR Billing",
         description: "SR Billing Windows Desktop License",
         order_id: orderData.orderId,
-        image: `${window.location.origin}/SR Billing-logo.png`,
+        image: `${window.location.origin}/billzy-logo.png`,
         theme: { color: "#43305F" },
         handler: async (response) => {
           try {
@@ -593,7 +593,7 @@ export default function Download() {
             const paymentServerBaseUrl = PAYMENT_API_URL.replace(/\/api\/?$/, "").replace(/\/$/, "");
             const absoluteDownloadUrl = `${paymentServerBaseUrl}${verifyData.downloadUrl}`;
             setDownloadUrl(absoluteDownloadUrl);
-            sessionStorage.setItem("SR Billing_download_url", absoluteDownloadUrl);
+            sessionStorage.setItem("billzy_download_url", absoluteDownloadUrl);
             setPaymentState("paid");
             setPaymentMessage("Payment verified. Your SR Billing download is ready.");
           } catch (error) {
@@ -634,16 +634,16 @@ export default function Download() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-        .SR Billing-download-page {
+        .billzy-download-page {
           font-family: "Space Grotesk", sans-serif;
         }
 
-        .SR Billing-display {
+        .billzy-display {
           font-family: "Bricolage Grotesque", sans-serif;
         }
       `}</style>
 
-      <main className="SR Billing-download-page overflow-hidden bg-[#F5F0ED] text-[#30242B]">
+      <main className="billzy-download-page overflow-hidden bg-[#F5F0ED] text-[#30242B]">
         {/* =========================================================
             HERO
         ========================================================== */}
@@ -699,7 +699,7 @@ export default function Download() {
                     duration: 0.8,
                     delay: 0.1,
                   }}
-                  className="SR Billing-display mt-7 text-6xl font-extrabold leading-[0.91] tracking-[-0.055em] text-[#30242B] sm:text-7xl lg:text-[88px]"
+                  className="billzy-display mt-7 text-6xl font-extrabold leading-[0.91] tracking-[-0.055em] text-[#30242B] sm:text-7xl lg:text-[88px]"
                 >
                   Your billing.
                   <br />
@@ -759,7 +759,7 @@ export default function Download() {
                       disabled={isBusy}
                       className="group inline-flex items-center justify-center gap-3 rounded-2xl bg-[#43305F] px-7 py-4 text-sm font-black text-white shadow-xl shadow-[#43305F]/20 transition-all duration-300 hover:bg-[#51406e] hover:shadow-2xl disabled:cursor-wait disabled:opacity-70"
                     >
-                      <span>{isBusy ? (paymentState === "verifying" ? "Verifying..." : "Opening payment...") : `Buy SR Billing ${SR Billing_PRICE_DISPLAY}`}</span>
+                      <span>{isBusy ? (paymentState === "verifying" ? "Verifying..." : "Opening payment...") : `Buy SR Billing ${BILLZY_PRICE_DISPLAY}`}</span>
                       <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10">
                         →
                       </span>
@@ -891,7 +891,7 @@ export default function Download() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="SR Billing-display mt-4 text-5xl font-extrabold leading-[0.95] tracking-[-0.04em] text-[#30242B] sm:text-6xl"
+                className="billzy-display mt-4 text-5xl font-extrabold leading-[0.95] tracking-[-0.04em] text-[#30242B] sm:text-6xl"
               >
                 More than
                 <br />
@@ -941,7 +941,7 @@ export default function Download() {
                   Getting started
                 </div>
 
-                <h2 className="SR Billing-display mt-4 text-5xl font-extrabold leading-[0.92] tracking-[-0.045em] text-white sm:text-6xl">
+                <h2 className="billzy-display mt-4 text-5xl font-extrabold leading-[0.92] tracking-[-0.045em] text-white sm:text-6xl">
                   From download
                   <br />
                   <span className="text-[#C76B42]">to billing.</span>
@@ -992,7 +992,7 @@ export default function Download() {
                   Requirements
                 </div>
 
-                <h2 className="SR Billing-display mt-4 text-5xl font-extrabold leading-[0.92] tracking-[-0.045em] text-[#30242B] sm:text-6xl">
+                <h2 className="billzy-display mt-4 text-5xl font-extrabold leading-[0.92] tracking-[-0.045em] text-[#30242B] sm:text-6xl">
                   Ready for your
                   <br />
                   <span className="text-[#43305F]">Windows PC.</span>
@@ -1044,7 +1044,7 @@ export default function Download() {
                 Questions
               </div>
 
-              <h2 className="SR Billing-display mt-4 text-5xl font-extrabold tracking-[-0.045em] text-[#30242B] sm:text-6xl">
+              <h2 className="billzy-display mt-4 text-5xl font-extrabold tracking-[-0.045em] text-[#30242B] sm:text-6xl">
                 Before you download.
               </h2>
             </div>
@@ -1155,8 +1155,8 @@ export default function Download() {
                 className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-white p-3 shadow-2xl"
               >
                 <img
-                  src="/SR Billing-logo.png"
-                  alt="SR Billing"
+                  src="/billzy-logo.png"
+                  alt="Billzy"
                   className="h-full w-full object-contain"
                 />
               </motion.div>
@@ -1165,7 +1165,7 @@ export default function Download() {
                 Ready when you are
               </div>
 
-              <h2 className="SR Billing-display mx-auto mt-4 max-w-3xl text-5xl font-extrabold leading-[0.95] tracking-[-0.045em] text-white sm:text-7xl">
+              <h2 className="billzy-display mx-auto mt-4 max-w-3xl text-5xl font-extrabold leading-[0.95] tracking-[-0.045em] text-white sm:text-7xl">
                 Download SR Billing.
                 <br />
                 <span className="text-[#C76B42]">
@@ -1193,7 +1193,7 @@ export default function Download() {
                   disabled={isBusy}
                   className="group mt-9 inline-flex items-center gap-4 rounded-2xl bg-[#C76B42] px-8 py-4 text-sm font-black text-white shadow-xl shadow-black/20 transition-all duration-300 hover:bg-[#d07850] hover:shadow-2xl disabled:cursor-wait disabled:opacity-70"
                 >
-                  {isBusy ? (paymentState === "verifying" ? "Verifying payment..." : "Opening Razorpay...") : `Buy SR Billing — ${SR Billing_PRICE_DISPLAY}`}
+                  {isBusy ? (paymentState === "verifying" ? "Verifying payment..." : "Opening Razorpay...") : `Buy SR Billing — ${BILLZY_PRICE_DISPLAY}`}
                   <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15">
                     →
                   </span>
