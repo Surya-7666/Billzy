@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://billzy-e1xp.onrender.com/sitemap.xml
