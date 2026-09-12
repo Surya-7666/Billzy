@@ -185,7 +185,7 @@ function DashboardPreview() {
         </div>
 
         <div className="hidden rounded-full border border-black/[0.04] bg-white/60 px-5 py-1.5 text-[9px] font-bold tracking-[0.18em] text-[#8A7D84] sm:block">
-          BILLZY DESKTOP
+          SR Billing DESKTOP
         </div>
 
         <div className="h-6 w-12 rounded-full bg-black/[0.04]" />
@@ -201,7 +201,7 @@ function DashboardPreview() {
             </div>
 
             <span className="text-sm font-black tracking-tight">
-              billzy
+              SR Billing
             </span>
           </div>
 
@@ -235,7 +235,7 @@ function DashboardPreview() {
             </div>
 
             <div className="mt-2 text-[10px] font-black">
-              Billzy Store
+              SR Billing Store
             </div>
 
             <div className="mt-1 text-[8px] text-[#9B8D94]">
@@ -769,7 +769,7 @@ export default function Home() {
     <main
       onMouseMove={handleMouseMove}
       onMouseLeave={resetMouse}
-      aria-label="Billzy billing software homepage"
+      aria-label="SR Billing billing software homepage"
       className="relative overflow-hidden bg-[#F5F0ED] text-[#30242B]"
     >
       {/* =====================================================
@@ -882,7 +882,7 @@ export default function Home() {
               <br />
 
               <span className="text-[#C76B42]">
-                Your Billzy.
+                Your SR Billing.
               </span>
             </motion.h1>
 
@@ -901,7 +901,7 @@ export default function Home() {
               }}
               className="mt-7 max-w-xl text-base leading-7 text-[#756970] sm:text-lg sm:leading-8"
             >
-              Billzy is simple offline billing software for small businesses and retail shops. Create professional bills, manage products, track sales, record payments, and keep your counter moving with a fast Windows desktop billing experience.
+              SR Billing is simple offline billing software for small businesses and retail shops. Create professional bills, manage products, track sales, record payments, and keep your counter moving with a fast Windows desktop billing experience.
             </motion.p>
 
             <motion.div
@@ -925,7 +925,7 @@ export default function Home() {
                   className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-2xl bg-[#43305F] px-7 py-4 text-sm font-black text-white shadow-[0_20px_45px_rgba(67,48,95,0.24)] transition hover:shadow-[0_25px_55px_rgba(67,48,95,0.3)]"
                 >
                   <span>
-                    Download Billzy
+                    Download SR Billing
                   </span>
 
                   <ArrowRight
@@ -942,7 +942,7 @@ export default function Home() {
                   to="/features"
                   className="group inline-flex items-center justify-center gap-3 rounded-2xl border border-white/90 bg-white/50 px-7 py-4 text-sm font-black text-[#43305F] shadow-[0_15px_35px_rgba(48,36,43,0.06)] backdrop-blur-xl transition hover:bg-white/75"
                 >
-                  Explore Billzy
+                  Explore SR Billing
 
                   <ArrowUpRight
                     size={17}
@@ -1239,7 +1239,7 @@ export default function Home() {
           <Reveal delay={0.15}>
             <div>
               <p className="max-w-2xl text-lg leading-8 text-[#756970]">
-                Billzy keeps the things you do every day
+                SR Billing keeps the things you do every day
                 simple. Search a product, add it to a bill,
                 collect payment and move on to the next
                 customer.
@@ -1520,7 +1520,7 @@ export default function Home() {
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
               <p className="text-[10px] font-black uppercase tracking-[0.22em] text-[#C76B42]">
-                The Billzy flow
+                The SR Billing flow
               </p>
 
               <h2 className="mt-5 text-4xl font-black leading-[0.95] tracking-[-0.055em] sm:text-5xl lg:text-6xl">
@@ -1708,7 +1708,7 @@ export default function Home() {
               </h2>
 
               <p className="mt-6 max-w-xl text-base leading-7 text-[#756970]">
-                Billzy is offline billing software for Windows, designed to keep your day moving even when your internet doesn't. Create bills, manage products, track sales and keep your billing workspace ready on your desktop.
+                SR Billing is offline billing software for Windows, designed to keep your day moving even when your internet doesn't. Create bills, manage products, track sales and keep your billing workspace ready on your desktop.
               </p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -1935,7 +1935,7 @@ export default function Home() {
                   to="/download"
                   className="inline-flex items-center justify-center gap-3 rounded-2xl bg-[#C76B42] px-7 py-4 text-sm font-black text-white shadow-[0_20px_45px_rgba(0,0,0,0.2)] transition hover:-translate-y-1"
                 >
-                  Get Billzy
+                  Get SR Billing
 
                   <ArrowRight size={17} />
                 </Link>
@@ -1961,7 +1961,7 @@ export default function Home() {
       ====================================================== */}
 
       <section
-        aria-labelledby="billzy-billing-software-heading"
+        aria-labelledby="SR Billing-billing-software-heading"
         className="relative z-10 px-5 pb-20 sm:px-8 lg:px-12"
       >
         <div className="mx-auto max-w-[1100px] rounded-[32px] border border-white/90 bg-white/35 p-7 shadow-[0_25px_70px_rgba(48,36,43,0.06)] backdrop-blur-2xl sm:p-10">
@@ -1972,17 +1972,17 @@ export default function Home() {
               </p>
 
               <h2
-                id="billzy-billing-software-heading"
+                id="SR Billing-billing-software-heading"
                 className="mt-4 text-3xl font-black leading-tight tracking-[-0.045em] sm:text-4xl"
               >
                 Billing software built for small businesses and retail shops.
               </h2>
 
               <p className="mt-5 text-sm leading-7 text-[#756970] sm:text-base">
-                Billzy brings everyday billing, GST-ready invoices, product
+                SR Billing brings everyday billing, GST-ready invoices, product
                 management, sales reports, payment tracking and professional
                 receipts into one simple Windows desktop application. Because
-                Billzy is designed for offline use, your shop can keep billing
+                SR Billing is designed for offline use, your shop can keep billing
                 even when the internet is unavailable.
               </p>
 
@@ -2020,7 +2020,7 @@ export default function Home() {
 
           <div className="flex items-center gap-2 text-[9px] font-black text-[#43305F]">
             <span className="h-1.5 w-1.5 rounded-full bg-[#C76B42]" />
-            BILLZY
+            SR Billing
           </div>
         </div>
       </section>
