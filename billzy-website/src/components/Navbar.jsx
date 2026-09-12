@@ -115,7 +115,7 @@ export default function Navbar() {
                   <img
                     src="/billzy-logo.png"
                     alt="Billzy"
-                    className="relative h-[48px] w-auto object-contain sm:h-[52px]"
+                    className="relative h-[52px] w-auto object-contain sm:h-[52px]"
                   />
                 </motion.div>
               </Link>
