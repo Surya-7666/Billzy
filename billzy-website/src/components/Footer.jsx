@@ -246,7 +246,7 @@ export default function Footer() {
                   scale: 0.97,
                 }}
                 src="/billzy-logo.png"
-                alt="SR Billing"
+                alt="Billzy"
                 className="h-[62px] w-auto object-contain brightness-0 invert"
               />
             </Link>
