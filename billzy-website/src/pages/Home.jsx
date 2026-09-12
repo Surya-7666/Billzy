@@ -853,7 +853,7 @@ export default function Home() {
               />
 
               <span className="text-[10px] font-black uppercase tracking-[0.18em] text-[#43305F]">
-                A calmer way to bill
+                SR • SALES & RECEIPTS
               </span>
             </motion.div>
 
@@ -885,6 +885,24 @@ export default function Home() {
                 Your SR Billing.
               </span>
             </motion.h1>
+
+            <motion.p
+              initial={{
+                opacity: 0,
+                y: 15,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 0.7,
+                delay: 0.2,
+              }}
+              className="mt-5 text-sm font-black uppercase tracking-[0.16em] text-[#43305F] sm:text-base"
+            >
+              Sales &amp; Receipts · Simple Billing. Smarter Business.
+            </motion.p>
 
             <motion.p
               initial={{
