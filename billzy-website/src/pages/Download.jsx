@@ -11,8 +11,8 @@ import {
 const PAYMENT_API_URL =
   import.meta.env.VITE_PAYMENT_API_URL || "http://localhost:5001/api";
 
-const BILLZY_PRICE_DISPLAY =
-  import.meta.env.VITE_BILLZY_PRICE_DISPLAY || "₹499";
+const SR Billing_PRICE_DISPLAY =
+  import.meta.env.VITE_SR Billing_PRICE_DISPLAY || "₹499";
 
 const benefits = [
   {
@@ -50,21 +50,21 @@ const installSteps = [
     number: "01",
     title: "Download",
     description:
-      "Complete the Billzy purchase first. After Razorpay confirms your payment, your protected Windows download becomes available.",
+      "Complete the SR Billing purchase first. After Razorpay confirms your payment, your protected Windows download becomes available.",
     icon: "↓",
   },
   {
     number: "02",
     title: "Extract",
     description:
-      "Right-click the ZIP file and choose Extract All to unpack the Billzy application.",
+      "Right-click the ZIP file and choose Extract All to unpack the SR Billing application.",
     icon: "⌗",
   },
   {
     number: "03",
     title: "Launch",
     description:
-      "Open the extracted folder and run Billzy.exe to start the application.",
+      "Open the extracted folder and run SR Billing.exe to start the application.",
     icon: "↗",
   },
 ];
@@ -78,19 +78,19 @@ const requirements = [
 
 const faqs = [
   {
-    question: "How do I get Billzy?",
+    question: "How do I get SR Billing?",
     answer:
-      "Billzy is available as a one-time purchase. Complete the secure Razorpay checkout and the protected Windows download becomes available after your payment is verified.",
+      "SR Billing is available as a one-time purchase. Complete the secure Razorpay checkout and the protected Windows download becomes available after your payment is verified.",
   },
   {
-    question: "Do I need internet to use Billzy?",
+    question: "Do I need internet to use SR Billing?",
     answer:
-      "Billzy is designed as an offline desktop billing application. Your normal billing workflow does not require a constant internet connection.",
+      "SR Billing is designed as an offline desktop billing application. Your normal billing workflow does not require a constant internet connection.",
   },
   {
     question: "How do I install the ZIP version?",
     answer:
-      "Download the ZIP file, extract it to a folder on your Windows computer, open the extracted folder and launch Billzy.exe.",
+      "Download the ZIP file, extract it to a folder on your Windows computer, open the extracted folder and launch SR Billing.exe.",
   },
   {
     question: "Where is my billing information stored?",
@@ -269,7 +269,7 @@ function DownloadConsole() {
             </div>
 
             <span className="text-[9px] font-black uppercase tracking-[0.25em] text-white/35">
-              Billzy / Windows
+              SR Billing / Windows
             </span>
           </div>
 
@@ -291,8 +291,8 @@ function DownloadConsole() {
 
               <div className="relative flex h-24 w-24 items-center justify-center rounded-[28px] bg-white p-4 shadow-2xl">
                 <img
-                  src="/billzy-logo.png"
-                  alt="Billzy"
+                  src="/SR Billing-logo.png"
+                  alt="SR Billing"
                   className="h-full w-full object-contain"
                 />
               </div>
@@ -305,7 +305,7 @@ function DownloadConsole() {
             </div>
 
             <h3 className="mt-3 text-2xl font-black tracking-tight text-white">
-              Billzy Desktop
+              SR Billing Desktop
             </h3>
 
             <p className="mt-2 text-xs text-white/45">
@@ -325,7 +325,7 @@ function DownloadConsole() {
 
               <div className="min-w-0 flex-1">
                 <div className="truncate text-sm font-bold text-white">
-                  Billzy-Windows.zip
+                  SR Billing-Windows.zip
                 </div>
 
                 <div className="mt-1 text-[10px] text-white/35">
@@ -469,7 +469,7 @@ function BenefitCard({ benefit, index }) {
 
         <div className="mt-6 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.15em] text-[#43305F]">
           <span className="h-1.5 w-1.5 rounded-full bg-[#C76B42]" />
-          Included with Billzy
+          Included with SR Billing
         </div>
       </div>
     </motion.div>
@@ -521,7 +521,7 @@ export default function Download() {
   const [paymentMessage, setPaymentMessage] = useState("");
 
   useEffect(() => {
-    const savedDownloadUrl = sessionStorage.getItem("billzy_download_url");
+    const savedDownloadUrl = sessionStorage.getItem("SR Billing_download_url");
     if (savedDownloadUrl) {
       setDownloadUrl(savedDownloadUrl);
       setPaymentState("paid");
@@ -570,10 +570,10 @@ export default function Download() {
         key: orderData.keyId,
         amount: orderData.amount,
         currency: orderData.currency,
-        name: "Billzy",
-        description: "Billzy Windows Desktop License",
+        name: "SR Billing",
+        description: "SR Billing Windows Desktop License",
         order_id: orderData.orderId,
-        image: `${window.location.origin}/billzy-logo.png`,
+        image: `${window.location.origin}/SR Billing-logo.png`,
         theme: { color: "#43305F" },
         handler: async (response) => {
           try {
@@ -593,9 +593,9 @@ export default function Download() {
             const paymentServerBaseUrl = PAYMENT_API_URL.replace(/\/api\/?$/, "").replace(/\/$/, "");
             const absoluteDownloadUrl = `${paymentServerBaseUrl}${verifyData.downloadUrl}`;
             setDownloadUrl(absoluteDownloadUrl);
-            sessionStorage.setItem("billzy_download_url", absoluteDownloadUrl);
+            sessionStorage.setItem("SR Billing_download_url", absoluteDownloadUrl);
             setPaymentState("paid");
-            setPaymentMessage("Payment verified. Your Billzy download is ready.");
+            setPaymentMessage("Payment verified. Your SR Billing download is ready.");
           } catch (error) {
             console.error(error);
             setPaymentState("error");
@@ -634,16 +634,16 @@ export default function Download() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-        .billzy-download-page {
+        .SR Billing-download-page {
           font-family: "Space Grotesk", sans-serif;
         }
 
-        .billzy-display {
+        .SR Billing-display {
           font-family: "Bricolage Grotesque", sans-serif;
         }
       `}</style>
 
-      <main className="billzy-download-page overflow-hidden bg-[#F5F0ED] text-[#30242B]">
+      <main className="SR Billing-download-page overflow-hidden bg-[#F5F0ED] text-[#30242B]">
         {/* =========================================================
             HERO
         ========================================================== */}
@@ -688,7 +688,7 @@ export default function Download() {
                   />
 
                   <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#43305F]">
-                    Billzy for Windows
+                    SR Billing for Windows
                   </span>
                 </motion.div>
 
@@ -699,7 +699,7 @@ export default function Download() {
                     duration: 0.8,
                     delay: 0.1,
                   }}
-                  className="billzy-display mt-7 text-6xl font-extrabold leading-[0.91] tracking-[-0.055em] text-[#30242B] sm:text-7xl lg:text-[88px]"
+                  className="SR Billing-display mt-7 text-6xl font-extrabold leading-[0.91] tracking-[-0.055em] text-[#30242B] sm:text-7xl lg:text-[88px]"
                 >
                   Your billing.
                   <br />
@@ -748,7 +748,7 @@ export default function Download() {
                       href={downloadUrl}
                       className="group inline-flex items-center justify-center gap-3 rounded-2xl bg-[#C76B42] px-7 py-4 text-sm font-black text-white shadow-xl shadow-[#C76B42]/20 transition-all duration-300 hover:bg-[#d07850] hover:shadow-2xl"
                     >
-                      <span>Download Billzy</span>
+                      <span>Download SR Billing</span>
                       <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15 transition-transform duration-300 group-hover:translate-y-1">
                         ↓
                       </span>
@@ -759,7 +759,7 @@ export default function Download() {
                       disabled={isBusy}
                       className="group inline-flex items-center justify-center gap-3 rounded-2xl bg-[#43305F] px-7 py-4 text-sm font-black text-white shadow-xl shadow-[#43305F]/20 transition-all duration-300 hover:bg-[#51406e] hover:shadow-2xl disabled:cursor-wait disabled:opacity-70"
                     >
-                      <span>{isBusy ? (paymentState === "verifying" ? "Verifying..." : "Opening payment...") : `Buy Billzy ${BILLZY_PRICE_DISPLAY}`}</span>
+                      <span>{isBusy ? (paymentState === "verifying" ? "Verifying..." : "Opening payment...") : `Buy SR Billing ${SR Billing_PRICE_DISPLAY}`}</span>
                       <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10">
                         →
                       </span>
@@ -883,7 +883,7 @@ export default function Download() {
                 viewport={{ once: true }}
                 className="text-[10px] font-black uppercase tracking-[0.22em] text-[#C76B42]"
               >
-                Inside Billzy
+                Inside SR Billing
               </motion.div>
 
               <motion.h2
@@ -891,7 +891,7 @@ export default function Download() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="billzy-display mt-4 text-5xl font-extrabold leading-[0.95] tracking-[-0.04em] text-[#30242B] sm:text-6xl"
+                className="SR Billing-display mt-4 text-5xl font-extrabold leading-[0.95] tracking-[-0.04em] text-[#30242B] sm:text-6xl"
               >
                 More than
                 <br />
@@ -899,7 +899,7 @@ export default function Download() {
               </motion.h2>
 
               <p className="mt-5 max-w-2xl text-base leading-7 text-[#756970]">
-                Billzy brings the essential parts of your daily billing
+                SR Billing brings the essential parts of your daily billing
                 workflow together in one focused desktop application.
               </p>
             </div>
@@ -941,7 +941,7 @@ export default function Download() {
                   Getting started
                 </div>
 
-                <h2 className="billzy-display mt-4 text-5xl font-extrabold leading-[0.92] tracking-[-0.045em] text-white sm:text-6xl">
+                <h2 className="SR Billing-display mt-4 text-5xl font-extrabold leading-[0.92] tracking-[-0.045em] text-white sm:text-6xl">
                   From download
                   <br />
                   <span className="text-[#C76B42]">to billing.</span>
@@ -959,7 +959,7 @@ export default function Download() {
 
                   <div>
                     <div className="text-xs font-bold text-white">
-                      Billzy-Windows.zip
+                      SR Billing-Windows.zip
                     </div>
                     <div className="mt-0.5 text-[9px] text-white/35">
                       Extract before launching
@@ -992,14 +992,14 @@ export default function Download() {
                   Requirements
                 </div>
 
-                <h2 className="billzy-display mt-4 text-5xl font-extrabold leading-[0.92] tracking-[-0.045em] text-[#30242B] sm:text-6xl">
+                <h2 className="SR Billing-display mt-4 text-5xl font-extrabold leading-[0.92] tracking-[-0.045em] text-[#30242B] sm:text-6xl">
                   Ready for your
                   <br />
                   <span className="text-[#43305F]">Windows PC.</span>
                 </h2>
 
                 <p className="mt-6 max-w-lg text-sm leading-7 text-[#756970]">
-                  The current Billzy desktop package is built for 64-bit
+                  The current SR Billing desktop package is built for 64-bit
                   Windows systems.
                 </p>
               </div>
@@ -1044,7 +1044,7 @@ export default function Download() {
                 Questions
               </div>
 
-              <h2 className="billzy-display mt-4 text-5xl font-extrabold tracking-[-0.045em] text-[#30242B] sm:text-6xl">
+              <h2 className="SR Billing-display mt-4 text-5xl font-extrabold tracking-[-0.045em] text-[#30242B] sm:text-6xl">
                 Before you download.
               </h2>
             </div>
@@ -1155,8 +1155,8 @@ export default function Download() {
                 className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-white p-3 shadow-2xl"
               >
                 <img
-                  src="/billzy-logo.png"
-                  alt="Billzy"
+                  src="/SR Billing-logo.png"
+                  alt="SR Billing"
                   className="h-full w-full object-contain"
                 />
               </motion.div>
@@ -1165,8 +1165,8 @@ export default function Download() {
                 Ready when you are
               </div>
 
-              <h2 className="billzy-display mx-auto mt-4 max-w-3xl text-5xl font-extrabold leading-[0.95] tracking-[-0.045em] text-white sm:text-7xl">
-                Download Billzy.
+              <h2 className="SR Billing-display mx-auto mt-4 max-w-3xl text-5xl font-extrabold leading-[0.95] tracking-[-0.045em] text-white sm:text-7xl">
+                Download SR Billing.
                 <br />
                 <span className="text-[#C76B42]">
                   Start billing.
@@ -1174,7 +1174,7 @@ export default function Download() {
               </h2>
 
               <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-white/50 sm:text-base">
-                Purchase Billzy securely and get the protected Windows package for your desktop billing workflow.
+                Purchase SR Billing securely and get the protected Windows package for your desktop billing workflow.
               </p>
 
               {paymentState === "paid" && downloadUrl ? (
@@ -1193,7 +1193,7 @@ export default function Download() {
                   disabled={isBusy}
                   className="group mt-9 inline-flex items-center gap-4 rounded-2xl bg-[#C76B42] px-8 py-4 text-sm font-black text-white shadow-xl shadow-black/20 transition-all duration-300 hover:bg-[#d07850] hover:shadow-2xl disabled:cursor-wait disabled:opacity-70"
                 >
-                  {isBusy ? (paymentState === "verifying" ? "Verifying payment..." : "Opening Razorpay...") : `Buy Billzy — ${BILLZY_PRICE_DISPLAY}`}
+                  {isBusy ? (paymentState === "verifying" ? "Verifying payment..." : "Opening Razorpay...") : `Buy SR Billing — ${SR Billing_PRICE_DISPLAY}`}
                   <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/15">
                     →
                   </span>
