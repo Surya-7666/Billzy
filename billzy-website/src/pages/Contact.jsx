@@ -15,17 +15,17 @@ const contactOptions = [
     number: "01",
     title: "General Questions",
     description:
-      "Questions about Billzy, features, billing workflows or getting started.",
-    action: "support@billzy.in",
-    href: "mailto:support@billzy.in",
+      "Questions about SR Billing, features, billing workflows or getting started.",
+    action: "support@SR Billing.in",
+    href: "mailto:support@SR Billing.in",
   },
   {
     number: "02",
     title: "Business Enquiries",
     description:
-      "Interested in using Billzy for your shop or business? Let's talk.",
+      "Interested in using SR Billing for your shop or business? Let's talk.",
     action: "Talk to us",
-    href: "mailto:support@billzy.in?subject=Business%20Enquiry",
+    href: "mailto:support@SR Billing.in?subject=Business%20Enquiry",
   },
   {
     number: "03",
@@ -33,25 +33,25 @@ const contactOptions = [
     description:
       "Having trouble with the desktop application? Tell us what happened.",
     action: "Get support",
-    href: "mailto:support@billzy.in?subject=Technical%20Support",
+    href: "mailto:support@SR Billing.in?subject=Technical%20Support",
   },
 ];
 
 const faqs = [
   {
-    question: "How can I get started with Billzy?",
+    question: "How can I get started with SR Billing?",
     answer:
-      "Download the Windows version of Billzy, extract the ZIP package and launch Billzy.exe.",
+      "Download the Windows version of SR Billing, extract the ZIP package and launch SR Billing.exe.",
   },
   {
-    question: "Does Billzy work offline?",
+    question: "Does SR Billing work offline?",
     answer:
-      "Yes. Billzy is designed as an offline desktop billing application, allowing your everyday billing workflow to continue without an internet connection.",
+      "Yes. SR Billing is designed as an offline desktop billing application, allowing your everyday billing workflow to continue without an internet connection.",
   },
   {
-    question: "Can I use Billzy for my business?",
+    question: "Can I use SR Billing for my business?",
     answer:
-      "Yes. Billzy is designed for businesses that need a simple workflow for billing, products, payments, receipts, staff and sales management.",
+      "Yes. SR Billing is designed for businesses that need a simple workflow for billing, products, payments, receipts, staff and sales management.",
   },
   {
     question: "How can I report a problem?",
@@ -234,7 +234,7 @@ export default function Contact() {
     try {
       const payload = {
         access_key: WEB3FORMS_ACCESS_KEY,
-        subject: `Billzy Contact: ${formData.subject}`,
+        subject: `SR Billing Contact: ${formData.subject}`,
         from_name: formData.name,
         email: formData.email,
         phone: formData.phone,
@@ -278,7 +278,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="billzy-contact-page overflow-hidden bg-[#F5F0ED] text-[#30242B]">
+    <div className="SR Billing-contact-page overflow-hidden bg-[#F5F0ED] text-[#30242B]">
 
       {/* =========================================================
           HERO
@@ -312,7 +312,7 @@ export default function Contact() {
               Get in touch
             </div>
 
-            <h1 className="billzy-display mt-6 text-5xl font-black leading-[0.95] tracking-[-0.05em] text-[#30242B] sm:text-6xl lg:text-8xl">
+            <h1 className="SR Billing-display mt-6 text-5xl font-black leading-[0.95] tracking-[-0.05em] text-[#30242B] sm:text-6xl lg:text-8xl">
               Let's make
               <br />
               <span className="text-[#43305F]">
@@ -321,14 +321,14 @@ export default function Contact() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-base leading-7 text-[#756970] sm:text-lg">
-              Have a question, need support or want to explore Billzy
+              Have a question, need support or want to explore SR Billing
               for your business? Drop us a message. We'll get back to
               you.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="mailto:support@billzy.in"
+                href="mailto:support@SR Billing.in"
                 className="rounded-full border border-white/80 bg-white/65 px-5 py-3 text-sm font-bold text-[#43305F] shadow-sm backdrop-blur-xl transition hover:-translate-y-0.5 hover:bg-white"
               >
                 Email support
@@ -338,7 +338,7 @@ export default function Contact() {
                 to="/download"
                 className="rounded-full bg-[#43305F] px-5 py-3 text-sm font-bold text-white shadow-[0_12px_30px_rgba(67,48,95,0.2)] transition hover:-translate-y-0.5 hover:bg-[#36264e]"
               >
-                Download Billzy →
+                Download SR Billing →
               </Link>
             </div>
           </motion.div>
@@ -373,7 +373,7 @@ export default function Contact() {
 
             <div className="mt-4 flex items-center gap-2 text-xs font-semibold text-[#756970]">
               <span className="h-2 w-2 rounded-full bg-[#C76B42]" />
-              support@billzy.in
+              support@SR Billing.in
             </div>
           </motion.div>
 
@@ -426,10 +426,10 @@ export default function Contact() {
                 </div>
 
                 <p className="mt-10 text-xs font-bold uppercase tracking-[0.25em] text-[#E4A17F]">
-                  Contact Billzy
+                  Contact SR Billing
                 </p>
 
-                <h2 className="billzy-display mt-4 text-4xl font-black leading-tight tracking-[-0.04em] sm:text-5xl">
+                <h2 className="SR Billing-display mt-4 text-4xl font-black leading-tight tracking-[-0.04em] sm:text-5xl">
                   Tell us
                   <br />
                   what's on
@@ -438,7 +438,7 @@ export default function Contact() {
                 </h2>
 
                 <p className="mt-6 max-w-md text-sm leading-7 text-white/65">
-                  Whether you're exploring Billzy, need technical help
+                  Whether you're exploring SR Billing, need technical help
                   or simply want to share feedback, we'd love to hear
                   from you.
                 </p>
@@ -451,10 +451,10 @@ export default function Contact() {
                     </div>
 
                     <a
-                      href="mailto:support@billzy.in"
+                      href="mailto:support@SR Billing.in"
                       className="mt-1 block text-sm font-bold text-[#E4A17F] transition hover:text-white"
                     >
-                      support@billzy.in
+                      support@SR Billing.in
                     </a>
                   </div>
 
@@ -488,7 +488,7 @@ export default function Contact() {
                   Send a message
                 </div>
 
-                <h2 className="billzy-display mt-3 text-3xl font-black tracking-[-0.04em] text-[#30242B] sm:text-4xl">
+                <h2 className="SR Billing-display mt-3 text-3xl font-black tracking-[-0.04em] text-[#30242B] sm:text-4xl">
                   How can we help?
                 </h2>
               </div>
@@ -723,7 +723,7 @@ export default function Contact() {
                 </motion.button>
 
                 <p className="text-center text-xs leading-5 text-[#9A8F94]">
-                  Your message will be securely delivered to the Billzy
+                  Your message will be securely delivered to the SR Billing
                   support inbox.
                 </p>
 
@@ -753,7 +753,7 @@ export default function Contact() {
               Quick answers
             </div>
 
-            <h2 className="billzy-display mt-3 text-4xl font-black tracking-[-0.04em] text-[#30242B] sm:text-5xl">
+            <h2 className="SR Billing-display mt-3 text-4xl font-black tracking-[-0.04em] text-[#30242B] sm:text-5xl">
               Before you ask.
             </h2>
 
@@ -800,13 +800,13 @@ export default function Contact() {
               Ready when you are
             </div>
 
-            <h2 className="billzy-display mx-auto mt-4 max-w-3xl text-4xl font-black tracking-[-0.04em] text-white sm:text-6xl">
+            <h2 className="SR Billing-display mx-auto mt-4 max-w-3xl text-4xl font-black tracking-[-0.04em] text-white sm:text-6xl">
               Let's get your shop
               <span className="text-[#E4A17F]"> billing.</span>
             </h2>
 
             <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-white/55 sm:text-base">
-              Download Billzy and experience a simpler way to manage
+              Download SR Billing and experience a simpler way to manage
               everyday billing.
             </p>
 
@@ -814,7 +814,7 @@ export default function Contact() {
               to="/download"
               className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#C76B42] px-7 py-4 text-sm font-black text-white shadow-[0_12px_35px_rgba(199,107,66,0.25)] transition hover:-translate-y-1 hover:bg-[#d47a50]"
             >
-              Download Billzy
+              Download SR Billing
               <span>→</span>
             </Link>
 
