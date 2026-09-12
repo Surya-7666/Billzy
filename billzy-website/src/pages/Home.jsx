@@ -769,6 +769,7 @@ export default function Home() {
     <main
       onMouseMove={handleMouseMove}
       onMouseLeave={resetMouse}
+      aria-label="Billzy billing software homepage"
       className="relative overflow-hidden bg-[#F5F0ED] text-[#30242B]"
     >
       {/* =====================================================
@@ -900,10 +901,7 @@ export default function Home() {
               }}
               className="mt-7 max-w-xl text-base leading-7 text-[#756970] sm:text-lg sm:leading-8"
             >
-              A thoughtfully simple billing workspace for
-              everyday businesses. Create bills, manage
-              products, track sales and keep your counter
-              moving.
+              Billzy is simple offline billing software for small businesses and retail shops. Create professional bills, manage products, track sales, record payments, and keep your counter moving with a fast Windows desktop billing experience.
             </motion.p>
 
             <motion.div
@@ -1710,10 +1708,7 @@ export default function Home() {
               </h2>
 
               <p className="mt-6 max-w-xl text-base leading-7 text-[#756970]">
-                Billzy is designed to keep your day moving
-                even when your internet doesn't. Your billing
-                workspace belongs on your desktop, ready
-                when you are.
+                Billzy is offline billing software for Windows, designed to keep your day moving even when your internet doesn't. Create bills, manage products, track sales and keep your billing workspace ready on your desktop.
               </p>
 
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -1960,6 +1955,58 @@ export default function Home() {
           </div>
         </motion.div>
       </section> */}
+
+      {/* =====================================================
+          SEO / PRODUCT SUMMARY
+      ====================================================== */}
+
+      <section
+        aria-labelledby="billzy-billing-software-heading"
+        className="relative z-10 px-5 pb-20 sm:px-8 lg:px-12"
+      >
+        <div className="mx-auto max-w-[1100px] rounded-[32px] border border-white/90 bg-white/35 p-7 shadow-[0_25px_70px_rgba(48,36,43,0.06)] backdrop-blur-2xl sm:p-10">
+          <Reveal>
+            <div className="max-w-3xl">
+              <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#C76B42]">
+                Simple billing for growing businesses
+              </p>
+
+              <h2
+                id="billzy-billing-software-heading"
+                className="mt-4 text-3xl font-black leading-tight tracking-[-0.045em] sm:text-4xl"
+              >
+                Billing software built for small businesses and retail shops.
+              </h2>
+
+              <p className="mt-5 text-sm leading-7 text-[#756970] sm:text-base">
+                Billzy brings everyday billing, GST-ready invoices, product
+                management, sales reports, payment tracking and professional
+                receipts into one simple Windows desktop application. Because
+                Billzy is designed for offline use, your shop can keep billing
+                even when the internet is unavailable.
+              </p>
+
+              <div className="mt-7 flex flex-wrap gap-3">
+                {[
+                  "Offline billing software",
+                  "GST-ready billing",
+                  "Windows billing software",
+                  "Retail shop billing",
+                  "Sales reports",
+                  "Professional receipts",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-white bg-white/60 px-3.5 py-2 text-[9px] font-black text-[#43305F] shadow-sm backdrop-blur-xl"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
 
       {/* =====================================================
           MINI FOOTER LINE
