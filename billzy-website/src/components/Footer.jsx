@@ -187,7 +187,7 @@ export default function Footer() {
               className="group relative flex shrink-0 items-center justify-between gap-8 overflow-hidden rounded-2xl bg-[#F4EEEA] px-5 py-3.5 text-xs font-black text-[#43305F] shadow-[0_15px_35px_rgba(0,0,0,0.18)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(0,0,0,0.25)]"
             >
               <span className="relative z-10">
-                Get Billzy
+                Get SR Billing
               </span>
 
               <motion.span
@@ -245,8 +245,8 @@ export default function Footer() {
                 whileTap={{
                   scale: 0.97,
                 }}
-                src="/billzy-logo.png"
-                alt="Billzy"
+                src="/SR Billing-logo.png"
+                alt="SR Billing"
                 className="h-[62px] w-auto object-contain brightness-0 invert"
               />
             </Link>
@@ -267,7 +267,7 @@ export default function Footer() {
               </span>
 
               <span className="text-[9px] font-bold text-white/50">
-                Billzy is ready to work
+                SR Billing is ready to work
               </span>
             </div>
           </motion.div>
@@ -374,7 +374,7 @@ export default function Footer() {
         <div className="border-t border-white/[0.08] py-5">
           <div className="flex flex-col gap-3 text-[9px] font-medium text-white/30 sm:flex-row sm:items-center sm:justify-between">
             <p>
-              © {new Date().getFullYear()} Billzy. All
+              © {new Date().getFullYear()} SR Billing. All
               rights reserved.
             </p>
 
