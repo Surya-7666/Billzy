@@ -595,7 +595,7 @@ export default function Features() {
                 className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/55 px-4 py-2 text-xs font-black uppercase tracking-[0.2em] text-[#43305F] shadow-sm backdrop-blur-xl"
               >
                 <span className="h-2 w-2 rounded-full bg-[#C76B42]" />
-                Billzy Features
+                SR Billing Features
               </motion.div>
 
               <h1 className="mt-7 text-5xl font-black leading-[0.98] tracking-[-0.045em] sm:text-6xl lg:text-7xl">
@@ -616,7 +616,7 @@ export default function Features() {
                   to="/download"
                   className="group inline-flex items-center gap-3 rounded-2xl bg-[#43305F] px-6 py-4 text-sm font-black text-white shadow-[0_15px_40px_rgba(67,48,95,0.25)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(67,48,95,0.35)]"
                 >
-                  Explore Billzy
+                  Explore SR Billing
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
@@ -696,7 +696,7 @@ export default function Features() {
             </div>
 
             <p className="max-w-md text-sm leading-7 text-[#756970]">
-              Move your cursor across the cards. Billzy's tools are designed
+              Move your cursor across the cards. SR Billing's tools are designed
               to feel as simple as the work they help you do.
             </p>
           </div>
@@ -768,7 +768,7 @@ export default function Features() {
                 </h2>
 
                 <p className="mt-6 max-w-xl leading-8 text-white/55">
-                  Every Billzy feature exists to remove friction from a
+                  Every SR Billing feature exists to remove friction from a
                   repetitive task. Choose a feature to see how the system
                   fits together.
                 </p>
@@ -863,7 +863,7 @@ export default function Features() {
                         </h3>
 
                         <p className="mt-3 leading-7 text-white/50">
-                          Explore the tools that make up the Billzy
+                          Explore the tools that make up the SR Billing
                           experience.
                         </p>
                       </div>
@@ -897,7 +897,7 @@ export default function Features() {
               </h2>
 
               <p className="mt-6 max-w-md leading-8 text-[#756970]">
-                Billzy keeps the entire billing journey connected, so you
+                SR Billing keeps the entire billing journey connected, so you
                 don't have to jump between complicated tools.
               </p>
 
@@ -1033,7 +1033,7 @@ export default function Features() {
               </h2>
 
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/60">
-                Download Billzy and bring your everyday billing workflow
+                Download SR Billing and bring your everyday billing workflow
                 together in one fast, focused desktop application.
               </p>
 
@@ -1042,7 +1042,7 @@ export default function Features() {
                   to="/download"
                   className="group inline-flex items-center justify-center gap-3 rounded-2xl bg-[#C76B42] px-7 py-4 text-sm font-black text-white shadow-xl transition duration-300 hover:-translate-y-1 hover:bg-[#d47a50]"
                 >
-                  Download Billzy
+                  Download SR Billing
                   <span className="transition-transform group-hover:translate-x-1">
                     →
                   </span>
