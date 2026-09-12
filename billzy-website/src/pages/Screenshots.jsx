@@ -342,7 +342,7 @@ export default function Screenshots() {
             </motion.div>
 
             <h1 className="mt-6 text-5xl font-black leading-[0.98] tracking-[-0.045em] text-[#30242B] sm:text-6xl lg:text-[76px]">
-              See Billzy
+              See SR Billing
               <br />
               <span className="relative inline-block text-[#43305F]">
                 in action.
@@ -418,7 +418,7 @@ export default function Screenshots() {
             </div>
 
             <p className="max-w-md text-sm leading-6 text-[#756970] md:text-right">
-              Explore the Billzy desktop application and see how each part of
+              Explore the SR Billing desktop application and see how each part of
               your billing workflow fits together.
             </p>
           </motion.div>
@@ -473,7 +473,7 @@ export default function Screenshots() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-5 text-base leading-7 text-[#756970] sm:text-lg"
             >
-              Billzy keeps the important tools close at hand so creating bills,
+              SR Billing keeps the important tools close at hand so creating bills,
               managing products, handling staff and reviewing sales stays
               simple.
             </motion.p>
@@ -551,7 +551,7 @@ export default function Screenshots() {
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/65 sm:text-base">
-              Download Billzy for Windows and experience a simpler way to
+              Download SR Billing for Windows and experience a simpler way to
               manage your everyday billing.
             </p>
 
@@ -559,7 +559,7 @@ export default function Screenshots() {
               to="/download"
               className="group mt-8 inline-flex items-center gap-3 rounded-2xl bg-[#C76B42] px-7 py-4 text-sm font-black text-white shadow-xl shadow-black/15 transition-all duration-300 hover:-translate-y-1 hover:bg-[#d27a52] hover:shadow-2xl"
             >
-              Download Billzy
+              Download SR Billing
               <span className="transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>
